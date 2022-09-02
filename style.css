@@ -1,0 +1,491 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* Custome variables */
+:root{
+    --Headings: 'Quicksand', sans-serif;
+    --body: 'Quicksand', sans-serif;
+    --buttons: 'Josefin Sans', sans-serif;
+    --captions: 'Karla', sans-serif;
+    --primaryBluePurpleDark: #5F79FF;
+    --primaryBluePurpleLight: #CEC9FF;
+    --Accent:#00178F;
+    --Grey900: #1D1B1B;
+    --Grey700: #373737;
+    --Grey500: #7B7B7B;
+    --Grey300: #C5C5C5;
+    --GreyWhite: #F3F3F3;
+}
+
+/* Hero section style */
+
+#Hero{
+    /* border: 2px solid red; */
+    display:flex;
+    width:100%;
+    height: 646px;
+    background: url("Img_EMR/TopBg-unsplash.jpg") no-repeat center center/cover;
+}
+
+#Hero::before{
+    content: "";
+    background-color:black;
+    position:absolute;
+    height: 646px;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+#Hero .navbar{
+    /* border: 2px solid black; */
+    display:flex;
+    position: absolute;
+    /* width: 375vh; */
+    width: 100%;
+    height: 121px;
+    background-color:rgba(255, 255, 255, 0.566);
+    z-index: 1;
+}
+
+#Hero .navbar #logo{
+    /* display:block; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 54px;
+    z-index: 1;
+}
+
+#Hero .navbar #logo img{
+    height: 120px;
+    width: 120px;
+}
+
+#Hero .navbar #menu{
+    /* border: 2px solid black; */
+    /* margin-top: 0px 167px; */
+    /* position:absolute;
+    right:70px; */
+    z-index: 1;
+    margin: 0px 70px 0px 555px;
+    width: 721px;
+    height:90px;
+}
+
+#Hero .navbar #menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 718px;
+    margin-top: 67px;
+}
+
+#Hero .navbar #menu ul li a{
+    text-decoration:none;
+    font-family: var(--buttons);
+    color:var(--Grey900);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#Hero .navbar #menu li a:hover, #Hero .navbar #menu li a.active{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color:var(--Accent)
+}
+
+#Hero #tagline{
+    position: absolute;
+    top: 329px;
+    left: 54px;
+    font-family: var(--Headings);
+    font-size: 4.5rem;
+    color:var(--GreyWhite);
+    font-weight: 300;
+    z-index: 1;
+}
+
+/* End of hero section style */
+
+/* About section style */
+#About{
+    /* border:2px solid red; */
+    height: 390px;
+    font-family: var(--Headings);
+}
+
+#About #title_about{
+    /* border: 2px solid blue; */
+    font-size: 3.5rem;
+    color: var(--primaryBluePurpleDark);
+    position: relative;
+    /* left: 54px; */
+    top: 41px;
+    width: 258px;
+    margin:Auto;
+}
+
+#About #body_about{
+    /* border:2px solid blue; */
+    display: block;
+    position: relative;
+    /* left: 63px; */
+    top: 62px;
+    font-size: 19.2px;
+    color: var(--Grey900);
+    width: 849px;
+    text-align: center;
+    margin: auto;
+}
+/* End of About section style */
+
+/* Consult section style */
+#Consult{
+    /* border: 2px solid blue; */
+    height: 394px;
+    display:flex;
+    background: url("Img_EMR/pexels-Consult1.jpg") no-repeat center center/cover;
+}
+
+#Consult::before{
+    content: "";
+    background-color: var(--primaryBluePurpleLight);
+    position:absolute;
+    height: 394px;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#Consult #title_consult{
+    font-family: var(--Headings);
+    font-size: 3.5rem;
+    color: var(--Accent);
+    position: relative;
+    top: 41px;
+    left: 173px;
+    width: 483px;
+    z-index: 1;
+}
+
+#Consult #body_consult{
+    /* border: 2px solid red; */
+    display:block;
+    font-family: var(--body);
+    font-size: 19.2px;
+    font-weight: 550;
+    line-height: 35px;
+    text-align: justify;
+    color:var(--Grey900);
+    position: relative;
+    top: 149px;
+    left: -307px;
+    width: 560px;
+    z-index: 1;
+}
+
+#Consult #btn_con{
+    position: relative;
+    top: 262px;
+    right: 66px;
+    width: 396px;
+    height: 50px;
+}
+#Consult #consult_btn{
+    width: 396px;
+    height: 50px;
+    background-color: var(--primaryBluePurpleDark);
+    border-radius: 10px;
+    font-family: var(--buttons);
+    font-size: 23.4px;
+    color: var(--GreyWhite);
+    border-color: var(--primaryBluePurpleDark);
+    z-index: 1;
+}
+
+#Consult #consult_btn:hover{
+    background-color: #6c85ff;
+}
+/* End of Consult section style */
+
+/* Service section style */
+#Service{
+    /* border:2px solid green; */
+    height: 665px;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--GreyWhite);
+}
+
+#Service #title_service{
+    /* border: 2px solid red; */
+    font-family: var(--Headings);
+    font-size: 3.5rem;
+    color: var(--Accent);
+    position: relative;
+    top:41px;
+    left: 173px;
+    width:219px;
+}
+
+#Service .events1{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 1179px;
+    height: 243px;
+    position: relative;
+    top: 69px;
+    left: 174px;
+    justify-content: space-between;
+}
+
+#Service .events1 .eve{
+    /* border: 2px solid green; */
+    height: 242px;
+    width: 388px;
+}
+
+#Service .events2{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-wrap: wrap;*/ 
+    width: 1179px;
+    height: 243px;
+    position: relative;
+    top: 74px;
+    left: 174px;
+    justify-content: space-between;
+}
+
+#Service .events2 .eve{
+    /* border: 2px solid green; */
+    height: 242px;
+    width: 388px;
+}
+#Service img{
+    height: 238px;
+    width: 388px;
+}
+
+#Service .events1 div .event_name{
+    background-color: #5f7affa3;
+    position: relative;
+    top: -49px;
+    width: 388px;
+    height: 45px;
+    padding: 10px 8px 10px 20px;
+    font-family: var(--captions);
+    font-size: 19.2px;
+    color: var(--GreyWhite);
+    font-weight:bold;
+    word-spacing: 6px;
+    transition-property: background-color;
+}
+
+#Service .events2 div .event_name{
+    background-color: #5f7affa3;
+    position: relative;
+    top: -49px;
+    width: 388px;
+    height: 45px;
+    padding: 10px 8px 10px 20px;
+    font-family: var(--captions);
+    font-size: 19.2px;
+    color: var(--GreyWhite);
+    font-weight:bold;
+    word-spacing: 6px;
+    transition-property: background-color;
+}
+
+#Service .events1 div .event_name:hover{
+    /* height: 50px; */
+    /* font-size:18px;  */
+    /* top: 188px;  */
+    background-color:var(--primaryBluePurpleDark);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;  
+}
+
+#Service .events2 div .event_name:hover{
+    background-color:var(--primaryBluePurpleDark);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;  
+}
+/* End of service section style */
+
+/* Client sections style */
+#Client{
+    /* display: flex; */
+    height: 390px;
+}
+
+#Client #title_client{
+    /* border: 2px solid red; */
+    font-family: var(--Headings);
+    color: var(--primaryBluePurpleDark);
+    font-size: 3.5rem;
+    position:relative;
+    left: 173px;
+    top: 41px;
+    height: 77px;
+    width: 179px;
+}
+
+#Client #company_logos{
+    /* border: 2px solid red; */
+    display: flex;
+    position: relative;
+    top: 68px;
+    left: 173px;
+    width: 1179px;
+    height: 243px;
+    justify-content: space-between;
+}
+
+#Client #logo1 img{
+    height: 200px;
+    width: 200px;
+}
+
+#Client #logo2 img{
+    height: 200px;
+    width: 219px;
+}
+
+#Client #logo3 img{
+    height: 200px;
+    width: 200px;
+}
+
+#Client #logo4 img{
+    height: 158px;
+    width: 460px;
+}
+/* End of Client section style */
+
+/* Review sections style */
+#Review{
+    /* display:flex; */
+    height: 540px;
+    background-color: var(--primaryBluePurpleLight);
+}
+
+#Review #title_review{
+    /* border: 2px solid blue; */
+    font-family: var(--Headings);
+    color: var(--Accent);
+    font-size: 3.5rem;
+    position:relative;
+    left: 173px;
+    top: 41px;
+    width: 441px;
+    height: 74px;
+}
+
+#Review #container{
+    /* border: 2px solid green; */
+    display: flex;
+    position: relative;
+    top: 78px;
+    left: 170px;
+    height: 360px;
+    width: 1173px;
+    justify-content: space-between;
+}
+
+#Review .client_review{
+    /* border: 2px solid black; */
+    border-radius: 23px;
+    height: 355px;
+    width: 324px;
+    background-color: rgba(255, 255, 255, 0.804);
+    font-family: var(--body);
+    font-size: 16px;
+    color: var(--Grey900);
+    text-align: justify;
+    padding: 34px;
+    line-height: 24px;
+    box-shadow: 5px 5px 3px #373737;
+}
+
+#Review .client_name{
+    /* border: 2px solid red; */
+    position: relative;
+    top: 10px;
+    font-family: var(--buttons);
+    color: var(--Accent);
+    text-align: right;
+}
+/* End of Review section style */
+
+/* Contact sections style */
+#Contact{
+    height: 334px;
+    background-color: var(--Accent);
+    color: var(--primaryBluePurpleLight);
+}
+
+#Contact #title_Contact{
+    /* border: 2px solid white; */
+    font-family: var(--Headings);
+    font-size: 3.5rem;
+    position:relative;
+    left: 173px;
+    top: 41px;
+    width: 217px;
+    height: 74px;
+}
+
+#Contact #con_container{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    top: 78px;
+    left: 170px;
+    height: 173px;
+    width: 1182px;
+}
+
+#Contact .title{
+    font-family: var(--body);
+    font-size: 27.6px;
+}
+
+#Contact .content{
+    /* border: 2px solid white; */
+    position: relative;
+    top: 10px;
+    font-family: var(--body);
+    font-size: 19.2px;
+}
+
+#Contact #sm{
+    /* border: 2px solid yellow; */
+    display: flex;
+    height: 40px;
+    width: 138px;
+    justify-content: space-between;
+}
+
+#Contact #sm img{
+    height: 32px;
+    width: 32px;
+    filter: invert(90%);
+}
+
+#Contact #bse img{
+    height: 150px;
+    width: 150px;
+}
+
+
+/* End of Contact section style */
+

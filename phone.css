@@ -1,0 +1,300 @@
+/* Hero section style */
+#Hero{
+    height: 755px;
+}
+
+#Hero::before{
+    height: 755px;
+}
+
+#Hero #tagline{
+    font-size: 5.5rem;
+    width: 765px;
+}
+#Hero .navbar{
+    flex-direction: column;
+    height:170px;
+}
+
+#Hero .navbar #logo{
+    margin: 0px auto;
+}
+
+#Hero .navbar #menu{
+    width: 815px;
+    height: 47px;
+    margin: 0px auto;
+}
+
+#Hero .navbar #menu ul{
+    width: 823px;
+    margin-top: 19px;
+}
+#Hero .navbar #menu ul li a{
+    font-size:23px;
+}
+/* End of hero section style */
+
+/* About section style */
+#About{
+    height: 840px
+}
+
+#About #title_about{
+    font-size: 5rem;
+    width: 299px;
+}
+
+#About #body_about{
+    font-size: 34.2px;
+}
+/* End of About section style */
+
+/* Consult section style */
+#Consult{
+    flex-direction: column;
+    height: 721px;
+}
+
+#Consult::before{
+    height: 721px;
+}
+#Consult #title_consult{
+    margin:0px auto;
+    left:0px;
+    font-size: 5rem;
+    width:689px;
+}
+
+#Consult #body_consult{
+    line-height: 48px;
+    position: relative;
+    top: 55px;
+    left: 0px;
+    width: 659px;
+    margin:0px auto;
+    z-index: 1;
+    font-size: 34.2px;
+    
+}
+
+#Consult #btn_con{
+    position: relative;
+    top: 127px;
+    right: 0px;
+    width: 528px;
+    height: 81px;
+    margin: 0px auto;
+} 
+#Consult #consult_btn{
+    margin: 0px auto;
+    width: 528px;
+    height: 81px;
+    border-radius: 56px;
+    font-size: 30.4px;
+}
+/* End of Consult section style */
+
+/* Service section style */
+
+#Service{
+    height: 3370px;
+}
+
+#Service #title_service{
+    margin: 0px auto;
+    left: 0px;
+    font-size: 5rem;
+    width: 304px;
+}
+
+#Service .events1{
+    top: 66px;
+    left: 0px;
+    width: 761px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+#Service .events1 .eve{
+    height:528px;
+    width: 761px;
+}
+
+#Service .events2{
+    left: 0px;
+    top: 1407px;
+    width: 761px;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+#Service .events2 .eve{
+    height:528px;
+    width: 761px;
+}
+
+#Service img{
+    height: 517px;
+    width: 761px;
+}
+
+#Service .events1 div .event_name{
+    width: 761px;
+    height: 80px;
+    top: -85px;
+    font-size: 37.2px;
+    transition-property: none;
+}
+
+#Service .events2 div .event_name{
+    width: 761px;
+    height: 80px;
+    top: -85px;
+    font-size: 37.2px;
+    transition-property: none;
+}
+
+#Service .events1 div .event_name:hover{
+    /* height: 50px; */
+    /* font-size:18px;  */
+    /* top: 188px;  */
+    background-color: #5f7affa3;
+    transition-duration: 0s;
+    transition-timing-function: none;  
+}
+
+#Service .events2 div .event_name:hover{
+    background-color: #5f7affa3;
+    transition-duration: 0s;
+    transition-timing-function: none;  
+}
+/* End Service section style */
+
+/* Client sections style */
+#Client{
+    height: 415px;
+}
+
+#Client #title_client{
+    left: 0px;
+    top: 41px;
+    font-size: 5rem;
+    width: 251px;
+    margin: 0px auto;
+}
+
+#Client #company_logos{
+    width: 911px;
+    height: 184px;
+    flex-wrap: wrap;
+    left:0px;
+    margin: 0px auto;
+    top: 98px;
+}
+
+#Client #logo1 img{
+    height: 159px;
+    width: 159px;
+}
+
+#Client #logo2 img{
+    border: 2px solid orange;
+    height: 191px;
+    width: 244px;
+}
+
+#Client #logo3 img{
+    height: 159px;
+    width: 159px;
+}
+
+#Client #logo4 img{
+    height: 153px;
+    width: 302px;
+}
+/* End of Client sections style */
+
+/* Review sections style */
+
+#Review{
+    height: 2119px;
+}
+#Review #title_review{
+    left: 0px;
+    margin: 0px auto;
+    font-size: 5rem;
+    width: 622px;
+}
+
+#Review #container{
+    left: 0px;
+    margin: auto;
+    height: 612px;
+    width: 769px;
+    flex-wrap: wrap;
+    top: 63px;
+}
+
+#Review .client_review{
+    padding: 48px;
+    height: 599px;
+    width: 762px;
+    margin: 82px auto -62px auto;
+    font-size: 37px;
+    line-height: 46px;
+}
+
+/* End of Review sections style */
+
+/* Contact sections style */
+#Contact{
+    height: 555px;
+}
+
+#Contact #title_Contact{
+    left: 0px;
+    margin: 0px auto;
+    font-size: 5rem;
+    width: 293px;
+}
+
+#Contact #con_container{
+    flex-wrap: wrap;
+    left: 0px;
+    margin: 0px auto;
+    height: 227px;
+    width: 638px;
+    top: 98px;
+}
+
+#Contact .title{
+    font-size: 54.6px;
+}
+
+#Contact .content{
+    font-size: 30.2px;
+}
+
+#Contact #Email{
+    position: relative;
+    top: 45px;
+}
+
+#Contact #sm{
+    height: 53px;
+    position: relative;
+    left: -64px;
+    top: -30px;
+}
+
+#Contact #sm img{
+    height: 38px;
+    width: 38px;
+    filter: invert(90%);
+}
+
+#Contact #bse img{
+    display:none ;
+}
+/* End of Contact sections style */
